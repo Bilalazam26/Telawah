@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Telawah</string>
+    <string name="al_moshaf">Al Moshaf</string>
+    <string name="moshaf_content">Moshaf Content</string>
+    <string name="sorah_number">Sorah Number</string>
+    <string name="sorah_name">Sorah Name</string>
+    <string name="page_number">Page Number</string>
+    <string name="jozza_number">Jozza Number</string>
+    <string name="jozza_index">Jozza Index</string>
+    <string name="sorah_index">Sorah Index</string>
+    <string name="the_first">The First</string>
+    <string name="the_second">The Second</string>
+    <string name="the_third">The Third</string>
+    <string name="the_forth">The Forth</string>
+    <string name="the_fifth">The Fifth</string>
+    <string name="the_sixth">The Sixth</string>
+    <string name="the_seventh">The Seventh</string>
+    <string name="the_eighth">The Eighth</string>
+    <string name="the_ninth">The Ninth</string>
+    <string name="the_tenth">The Tenth</string>
+    <string name="the_eleventh">The Eleventh</string>
+    <string name="the_twelfth">The Twelfth</string>
+    <string name="the_thirteenth">The Thirteenth</string>
+    <string name="the_fourteenth">The Fourteenth</string>
+    <string name="the_fifteenth">The Fifteenth</string>
+    <string name="the_sixteenth">The Sixteenth</string>
+    <string name="the_seventeenth">The Seventeenth</string>
+    <string name="the_eighteenth">The Eighteenth</string>
+    <string name="the_nineteenth">The Nineteenth</string>
+    <string name="the_twentieth">The Twentieth</string>
+    <string name="the_twenty_first">The Twenty-First</string>
+    <string name="the_twenty_second">The Twenty-Second</string>
+    <string name="the_twenty_third">The Twenty-Third</string>
+    <string name="the_twenty_fourth">The Twenty-Fourth</string>
+    <string name="the_twenty_fifth">The Twenty-Fifth</string>
+    <string name="the_twenty_sixth">The Twenty-Sixth</string>
+    <string name="the_twenty_seventh">The Twenty-Seventh</string>
+    <string name="the_twenty_eighth">The Twenty-Eighth</string>
+    <string name="the_twenty_ninth">The Twenty-Ninth</string>
+    <string name="the_thirty">The Thirty</string>
+    <string name="search_for_ayah">Search for Ayah</string>
+    <string name="search_by_ayah">Search by Ayah</string>
+    <string name="ayah_number">Ayah Number</string>
+</resources>

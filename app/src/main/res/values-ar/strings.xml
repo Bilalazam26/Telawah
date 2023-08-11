@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تلاوة</string>
+    <string name="al_moshaf">المصحف</string>
+    <string name="moshaf_content">الفهرس</string>
+    <string name="sorah_number">رقم السورة</string>
+    <string name="sorah_name">إسم السورة</string>
+    <string name="page_number">رقم الصفحة</string>
+    <string name="jozza_number">رقم الجزء</string>
+    <string name="jozza_index">فهرس الأجزاء</string>
+    <string name="sorah_index">فهرس السور</string>
+    <string name="the_first">الأول</string>
+    <string name="the_second">الثاني</string>
+    <string name="the_third">الثالث</string>
+    <string name="the_forth">الرابع</string>
+    <string name="the_fifth">الخامس</string>
+    <string name="the_sixth">السادس</string>
+    <string name="the_seventh">السابع</string>
+    <string name="the_eighth">الثامن</string>
+    <string name="the_ninth">التاسع</string>
+    <string name="the_tenth">العاشر</string>
+    <string name="the_eleventh">الحادي عشر</string>
+    <string name="the_twelfth">الثاني عشر</string>
+    <string name="the_thirteenth">الثالث عشر</string>
+    <string name="the_fourteenth">الرابع عشر</string>
+    <string name="the_fifteenth">الخامس عشر</string>
+    <string name="the_sixteenth">السادس عشر</string>
+    <string name="the_seventeenth">السابع عشر</string>
+    <string name="the_eighteenth">الثامن عشر</string>
+    <string name="the_nineteenth">التاسع عشر</string>
+    <string name="the_twentieth">العشرون</string>
+    <string name="the_twenty_first">الواحد و العشرون</string>
+    <string name="the_twenty_second">الثاني و العشرون</string>
+    <string name="the_twenty_third">الثالث و العشرون</string>
+    <string name="the_twenty_fourth">الرابع و العشرون</string>
+    <string name="the_twenty_fifth">الخامس و العشرون</string>
+    <string name="the_twenty_sixth">السادس و العشرون</string>
+    <string name="the_twenty_seventh">السابع و العشرون</string>
+    <string name="the_twenty_eighth">الثامن و العشرون</string>
+    <string name="the_twenty_ninth">التاسع و العشرون</string>
+    <string name="the_thirty">الثلاثون</string>
+    <string name="search_for_ayah">البحث عن آية</string>
+    <string name="search_by_ayah">اكتب الآية</string>
+    <string name="ayah_number">Ayah Number</string>
+</resources>
