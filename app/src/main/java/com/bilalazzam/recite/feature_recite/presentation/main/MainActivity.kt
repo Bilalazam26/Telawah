@@ -33,7 +33,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val splashViewModel = viewModel<SplashViewModel>()
-            val alMoshafViewModel = viewModel<AlMoshafViewModel>()
             val moshafContentViewModel = viewModel<MoshafContentViewModel>()
             ReciteTheme {
                 // A surface container using the 'background' color from the theme
@@ -48,7 +47,6 @@ class MainActivity : ComponentActivity() {
                         //next step : try to use viewModel by moving states to viewModel
                         val navController = rememberNavController()
                         val navBackStackEntry by navController.currentBackStackEntryAsState()
-                        val pages = alMoshafViewModel.quranPages()
                         var state = BottomNavigationState(
                             navController =navController,
                             currentDestination = navBackStackEntry?.destination,
@@ -59,7 +57,6 @@ class MainActivity : ComponentActivity() {
                         )
                         MainScreen(
                             bottomNavigationState = state,
-                            pages = pages,
                             moshafContentState = moshafContentViewModel.getMoshafContentState(),
                             modifier = Modifier.fillMaxSize(),
                             context = this

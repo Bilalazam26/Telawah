@@ -22,7 +22,7 @@ import com.bilalazzam.recite.feature_recite.presentation.util.BottomNavScreen
 @Composable
 fun MainScreen(
     bottomNavigationState: BottomNavigationState,
-    pages: List<Page>,moshafContentState: MoshafContentState,
+    moshafContentState: MoshafContentState,
     context: Context,
     modifier: Modifier = Modifier
 ) {
@@ -47,7 +47,6 @@ fun MainScreen(
         ) {
             BottomNavGraph(
                 navController = bottomNavigationState.navController,
-                pages = pages,
                 moshafContentState = moshafContentState,
                 context = context
             )

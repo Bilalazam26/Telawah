@@ -19,7 +19,6 @@ import com.bilalazzam.recite.feature_recite.presentation.util.Screen
 @Composable
 fun BottomNavGraph(
     navController: NavHostController,
-    pages: List<Page>,
     moshafContentState: MoshafContentState,
     context: Context
 ) {
@@ -60,7 +59,6 @@ fun BottomNavGraph(
             )
         ) {
             AlMoshafScreen(
-                pages = pages,
                 pageNumber = it.arguments?.getInt("pageNumber")
             )
         }

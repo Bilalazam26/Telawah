@@ -42,4 +42,5 @@
     <string name="search_for_ayah">البحث عن آية</string>
     <string name="search_by_ayah">اكتب الآية</string>
     <string name="ayah_number">Ayah Number</string>
+    <string name="bookmark">BookMark</string>
 </resources>
