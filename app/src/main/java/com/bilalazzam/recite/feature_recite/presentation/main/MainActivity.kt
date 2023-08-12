@@ -1,5 +1,6 @@
 package com.bilalazzam.recite.feature_recite.presentation.main
 
+import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
@@ -19,6 +20,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.bilalazzam.recite.feature_recite.data.dataSource.local.SharedPreference
 import com.bilalazzam.recite.feature_recite.presentation.moshaf.AlMoshafViewModel
 import com.bilalazzam.recite.feature_recite.presentation.moshafContent.MoshafContentViewModel
 import com.bilalazzam.recite.feature_recite.presentation.splash.SplashScreen
@@ -31,6 +33,8 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        SharedPreference.set(this.getPreferences(Context.MODE_PRIVATE))
+
         setContent {
             val splashViewModel = viewModel<SplashViewModel>()
             val moshafContentViewModel = viewModel<MoshafContentViewModel>()

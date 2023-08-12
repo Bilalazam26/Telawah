@@ -26,7 +26,8 @@ fun MoshafContentScreen(
 ) {
     val tabs = listOf(
         TabItem.SorahIndex(moshafContentState.sorahList, onItemClick, context),
-        TabItem.JozzaIndex(moshafContentState.jozzaList, onItemClick, context)
+        TabItem.JozzaIndex(moshafContentState.jozzaList, onItemClick, context),
+        TabItem.PageIndex(onItemClick, context)
     )
     Column(
         modifier = modifier.padding(8.dp)

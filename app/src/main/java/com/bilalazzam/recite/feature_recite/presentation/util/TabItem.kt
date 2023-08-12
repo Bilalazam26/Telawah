@@ -6,6 +6,7 @@ import com.bilalazzam.recite.R
 import com.bilalazzam.recite.feature_recite.domain.model.Jozza
 import com.bilalazzam.recite.feature_recite.domain.model.Sorah
 import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.jozzaIndex.JozzaIndexScreen
+import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.pageIndex.PageIndexScreen
 import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.sorahIndex.SorahIndexScreen
 
 typealias ComposableFun = @Composable () -> Unit
@@ -30,6 +31,15 @@ sealed class TabItem (
                 jozzaList = jozzaList,
                 onJozzaClick = onJozzaClick,
                 context = context
+            )
+        }
+    )
+
+    class PageIndex(onPageClick: (Int) -> Unit, context: Context): TabItem (
+        title = context.getString(R.string.pages),
+        screen = {
+            PageIndexScreen(
+                onPageClick = onPageClick
             )
         }
     )

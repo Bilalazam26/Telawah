@@ -42,4 +42,6 @@
     <string name="search_by_ayah">Search by Ayah</string>
     <string name="ayah_number">Ayah Number</string>
     <string name="bookmark">BookMark</string>
+    <string name="pages">Pages</string>
+    <string name="the_page">The Page</string>
 </resources>

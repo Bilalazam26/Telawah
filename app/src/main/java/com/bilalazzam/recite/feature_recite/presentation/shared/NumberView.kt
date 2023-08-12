@@ -17,9 +17,13 @@ import com.bilalazzam.recite.R
 fun NumberView(
     number: Int,
     containerColor: Color = MaterialTheme.colorScheme.primary,
-    contentColor: Color = MaterialTheme.colorScheme.secondaryContainer
+    contentColor: Color = MaterialTheme.colorScheme.secondaryContainer,
+    modifier: Modifier = Modifier
 ) {
-    Box(contentAlignment = Alignment.Center) {
+    Box(
+        modifier = modifier,
+        contentAlignment = Alignment.Center
+    ) {
         Icon(
             painter = painterResource(id = R.drawable.number_container),
             contentDescription = null,

@@ -1,6 +1,7 @@
 package com.bilalazzam.recite.feature_recite.presentation.moshaf
 
 
+import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -28,6 +29,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.bilalazzam.recite.R
 import com.bilalazzam.recite.feature_recite.domain.model.Page
 
+private const val TAG = "AlMoshafScreen"
+
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun AlMoshafScreen(
@@ -36,11 +39,12 @@ fun AlMoshafScreen(
     viewModel: AlMoshafViewModel = hiltViewModel()
 ) {
     val pages = viewModel.quranPages()
-    val state = rememberPagerState()
+    val state = rememberPagerState(viewModel.currentPage.value as Int - 1)
     LaunchedEffect(key1 = true) {
         if (pageNumber as Int != -1) {
             state.animateScrollToPage(pageNumber-1)
         }
+
     }
 
     Surface(
@@ -71,7 +75,7 @@ fun AlMoshafScreen(
                             .padding(start = 42.dp, top = 8.dp)
                             .align(Alignment.TopStart)
                             .clickable {
-                                viewModel.setBookmarkedPage(index+1)
+                                viewModel.setBookmarkedPage(index + 1)
                             },
                         tint = Color.Red.copy(alpha = .3f),
                     )
@@ -79,4 +83,5 @@ fun AlMoshafScreen(
             }
         }
     }
+    viewModel.setCurrentPage(state.currentPage + 1)
 }

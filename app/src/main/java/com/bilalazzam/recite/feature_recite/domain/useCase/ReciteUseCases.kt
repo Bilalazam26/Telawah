@@ -4,5 +4,9 @@ data class ReciteUseCases(
     val getAllQuranPages: GetAllQuranPages,
     val getSorahList: GetSorahList,
     val getJozzaList: GetJozzaList,
-    val getAyatBySubtext: GetAyatBySubtext
+    val getAyatBySubtext: GetAyatBySubtext,
+    val getCurrentPage: GetCurrentPage,
+    val setCurrentPage: SetCurrentPage,
+    val getBookmarkedPage: GetBookmarkedPage,
+    val setBookmarkedPage: SetBookmarkedPage
 )

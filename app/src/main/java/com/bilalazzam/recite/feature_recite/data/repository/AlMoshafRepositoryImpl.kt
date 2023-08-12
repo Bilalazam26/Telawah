@@ -2,6 +2,7 @@ package com.bilalazzam.recite.feature_recite.data.repository
 
 import android.content.Context
 import com.bilalazzam.recite.R
+import com.bilalazzam.recite.feature_recite.data.dataSource.local.SharedPreference
 import com.bilalazzam.recite.feature_recite.domain.model.Page
 import com.bilalazzam.recite.feature_recite.domain.repository.AlMoshafRepository
 
@@ -612,6 +613,22 @@ class AlMoshafRepositoryImpl: AlMoshafRepository {
         Page(603, R.drawable.page_603),
         Page(604, R.drawable.page_604),
     )
+
+    override fun getCurrentPage(): Int? {
+        return SharedPreference.getCurrentPage()
+    }
+
+    override fun setCurrentPage(currentPage: Int) {
+        SharedPreference.setCurrentPage(currentPage)
+    }
+
+    override fun getBookmarkedPage(): Int? {
+        return SharedPreference.getBookmarkedPage()
+    }
+
+    override fun setBookmarkedPage(pageNumber: Int) {
+        SharedPreference.setBookmarkedPage(pageNumber)
+    }
 
 
 }

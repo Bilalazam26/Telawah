@@ -43,4 +43,6 @@
     <string name="search_by_ayah">اكتب الآية</string>
     <string name="ayah_number">Ayah Number</string>
     <string name="bookmark">BookMark</string>
+    <string name="pages">Pages</string>
+    <string name="the_page">الصفحة</string>
 </resources>

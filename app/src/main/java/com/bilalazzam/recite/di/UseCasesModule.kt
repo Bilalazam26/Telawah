@@ -5,9 +5,13 @@ import com.bilalazzam.recite.feature_recite.domain.repository.MoshafContentRepos
 import com.bilalazzam.recite.feature_recite.domain.repository.SearchAyahRepository
 import com.bilalazzam.recite.feature_recite.domain.useCase.GetAllQuranPages
 import com.bilalazzam.recite.feature_recite.domain.useCase.GetAyatBySubtext
+import com.bilalazzam.recite.feature_recite.domain.useCase.GetBookmarkedPage
+import com.bilalazzam.recite.feature_recite.domain.useCase.GetCurrentPage
 import com.bilalazzam.recite.feature_recite.domain.useCase.GetJozzaList
 import com.bilalazzam.recite.feature_recite.domain.useCase.GetSorahList
 import com.bilalazzam.recite.feature_recite.domain.useCase.ReciteUseCases
+import com.bilalazzam.recite.feature_recite.domain.useCase.SetBookmarkedPage
+import com.bilalazzam.recite.feature_recite.domain.useCase.SetCurrentPage
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,7 +33,11 @@ object UseCasesModule {
             GetAllQuranPages(alMoshafRepository),
             GetSorahList(moshafContentRepository),
             GetJozzaList(moshafContentRepository),
-            GetAyatBySubtext(searchAyahRepository)
+            GetAyatBySubtext(searchAyahRepository),
+            GetCurrentPage(alMoshafRepository),
+            SetCurrentPage(alMoshafRepository),
+            GetBookmarkedPage(alMoshafRepository),
+            SetBookmarkedPage(alMoshafRepository)
         )
     }
 }
