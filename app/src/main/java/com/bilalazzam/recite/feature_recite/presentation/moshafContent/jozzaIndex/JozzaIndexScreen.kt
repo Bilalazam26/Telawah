@@ -1,5 +1,7 @@
-package com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.sorahIndex
+package com.bilalazzam.recite.feature_recite.presentation.moshafContent.jozzaIndex
 
+import android.content.Context
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -17,12 +19,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.bilalazzam.recite.R
-import com.bilalazzam.recite.feature_recite.domain.model.Sorah
+import com.bilalazzam.recite.feature_recite.domain.model.Jozza
 
 @Composable
-fun SorahIndexScreen(
-    sorahList: List<Sorah>,
-    onSorahClick: (Int) -> Unit
+fun JozzaIndexScreen(
+    jozzaList: List<Jozza>,
+    onJozzaClick: (Int) -> Unit,
+    context: Context
 ) {
     LazyColumn(
         modifier = Modifier
@@ -37,12 +40,7 @@ fun SorahIndexScreen(
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
-                    text = stringResource(R.string.sorah_number),
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.secondaryContainer
-                )
-                Text(
-                    text = stringResource(R.string.sorah_name),
+                    text = stringResource(R.string.jozza_number),
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.secondaryContainer
                 )
@@ -53,13 +51,14 @@ fun SorahIndexScreen(
                 )
             }
         }
-        items(sorahList) {sorah ->
-            SorahItem(
-                sorah = sorah,
+        items(jozzaList) {jozza ->
+            JozzaItem(
+                jozza = jozza,
+                context = context,
                 modifier = Modifier
                     .fillMaxWidth()
                     .clickable {
-                        onSorahClick(sorah.startPage)
+                        onJozzaClick(jozza.startPage)
                     }
                     .border(
                         width = 1.dp,
@@ -71,3 +70,5 @@ fun SorahIndexScreen(
     }
 
 }
+
+

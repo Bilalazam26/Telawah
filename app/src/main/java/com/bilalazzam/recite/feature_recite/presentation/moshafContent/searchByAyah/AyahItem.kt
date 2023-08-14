@@ -1,4 +1,4 @@
-package com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.searchByAyah
+package com.bilalazzam.recite.feature_recite.presentation.moshafContent.searchByAyah
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement

@@ -12,7 +12,7 @@ import com.bilalazzam.recite.feature_recite.domain.model.Page
 import com.bilalazzam.recite.feature_recite.presentation.moshaf.AlMoshafScreen
 import com.bilalazzam.recite.feature_recite.presentation.moshafContent.MoshafContentScreen
 import com.bilalazzam.recite.feature_recite.presentation.moshafContent.MoshafContentState
-import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.searchByAyah.SearchScreen
+import com.bilalazzam.recite.feature_recite.presentation.moshafContent.searchByAyah.SearchScreen
 import com.bilalazzam.recite.feature_recite.presentation.util.BottomNavScreen
 import com.bilalazzam.recite.feature_recite.presentation.util.Screen
 
@@ -71,7 +71,8 @@ fun BottomNavGraph(
                     navController.navigate(
                         route = "${BottomNavScreen.AlMoshafScreen(context).route}/${pageNumber}"
                     )
-                }
+                },
+                navController = navController
             )
         }
     }

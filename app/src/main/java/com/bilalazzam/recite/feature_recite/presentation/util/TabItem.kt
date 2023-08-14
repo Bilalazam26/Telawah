@@ -5,9 +5,9 @@ import androidx.compose.runtime.Composable
 import com.bilalazzam.recite.R
 import com.bilalazzam.recite.feature_recite.domain.model.Jozza
 import com.bilalazzam.recite.feature_recite.domain.model.Sorah
-import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.jozzaIndex.JozzaIndexScreen
-import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.pageIndex.PageIndexScreen
-import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.sorahIndex.SorahIndexScreen
+import com.bilalazzam.recite.feature_recite.presentation.moshafContent.jozzaIndex.JozzaIndexScreen
+import com.bilalazzam.recite.feature_recite.presentation.moshafContent.pageIndex.PageIndexScreen
+import com.bilalazzam.recite.feature_recite.presentation.moshafContent.sorahIndex.SorahIndexScreen
 
 typealias ComposableFun = @Composable () -> Unit
 

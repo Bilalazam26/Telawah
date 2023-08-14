@@ -1,4 +1,4 @@
-package com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.pageIndex
+package com.bilalazzam.recite.feature_recite.presentation.moshafContent.pageIndex
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -21,7 +21,7 @@ import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.bilalazzam.recite.R
-import com.bilalazzam.recite.feature_recite.presentation.moshafContent.components.jozzaIndex.JozzaItem
+import com.bilalazzam.recite.feature_recite.presentation.moshafContent.jozzaIndex.JozzaItem
 import com.bilalazzam.recite.feature_recite.presentation.shared.NumberView
 
 @Composable

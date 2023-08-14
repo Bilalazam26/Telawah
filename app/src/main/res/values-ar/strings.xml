@@ -45,4 +45,5 @@
     <string name="bookmark">BookMark</string>
     <string name="pages">Pages</string>
     <string name="the_page">الصفحة</string>
+    <string name="back">back</string>
 </resources>
