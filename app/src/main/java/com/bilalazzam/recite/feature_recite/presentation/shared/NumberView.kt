@@ -1,6 +1,7 @@
 package com.bilalazzam.recite.feature_recite.presentation.shared
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.sizeIn
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme

@@ -24,19 +24,21 @@ fun SorahItem(
 ) {
     Row(
         modifier = modifier,
-        horizontalArrangement = Arrangement.SpaceBetween
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
     ) {
-        NumberView(number = sorah.sorahNumber)
+        Text(
+            text = sorah.sorahNumber.toString(),
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.secondaryContainer
+        )
         Text(
             text = sorah.sorahNameAr,
             style = MaterialTheme.typography.titleLarge,
             color = MaterialTheme.colorScheme.secondaryContainer
         )
-        Text(
-            text = sorah.startPage.toString(),
-            style = MaterialTheme.typography.titleMedium,
-            color = MaterialTheme.colorScheme.secondaryContainer
-        )
+        NumberView(number = sorah.startPage)
+
     }
 
 }

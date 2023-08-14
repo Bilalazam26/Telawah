@@ -1,7 +1,5 @@
 package com.bilalazzam.recite.feature_recite.presentation.moshafContent.jozzaIndex
 
-import android.content.Context
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -16,6 +14,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.bilalazzam.recite.R
@@ -24,9 +23,9 @@ import com.bilalazzam.recite.feature_recite.domain.model.Jozza
 @Composable
 fun JozzaIndexScreen(
     jozzaList: List<Jozza>,
-    onJozzaClick: (Int) -> Unit,
-    context: Context
+    onJozzaClick: (Int) -> Unit
 ) {
+    val context = LocalContext.current
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()

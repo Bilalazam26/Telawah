@@ -1,6 +1,5 @@
 package com.bilalazzam.recite.feature_recite.presentation.moshafContent
 
-import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -17,17 +16,17 @@ class MoshafContentViewModel @Inject constructor(
     private val reciteUseCases: ReciteUseCases
 ): ViewModel() {
 
-    private val moshafContentState = MoshafContentState(
-        sorahList = listOf(),
-        jozzaList = listOf()
-    )
+    private val _sorahListState = mutableStateOf(listOf<Sorah>())
+    val sorahListState: State<List<Sorah>> = _sorahListState
 
-    fun getMoshafContentState(): MoshafContentState {
+    private val _jozzaListState = mutableStateOf(listOf<Jozza>())
+    val jozzaListState: State<List<Jozza>> = _jozzaListState
+
+    init {
         viewModelScope.launch {
-            moshafContentState.sorahList = reciteUseCases.getSorahList()
-            moshafContentState.jozzaList = reciteUseCases.getJozzaList()
+            _sorahListState.value = reciteUseCases.getSorahList()
+            _jozzaListState.value = reciteUseCases.getJozzaList()
         }
-        return moshafContentState
     }
 
 }
